@@ -1,0 +1,34 @@
+<SpellingWidget>:
+    orientation: 'vertical'
+    BoxLayout:
+        id: pic
+        size_hint_y: 0.2
+    BoxLayout:
+        id: input
+        size_hint_y: 0.15
+    BoxLayout:
+        id: reference
+        size_hint_y: 0.15
+#    Label:
+#        id: target
+#        font_name: 'arial'
+#        halign: 'left'
+#        text_size: self.size
+#        text: 'שלום עליכם ולהתראות'
+#        font_size: 80
+#        color: [1,1,1,1]
+    BoxLayout:
+        Label:
+            text: str(root.correct)
+            font_size: 80
+            color: [0,1,0,1]
+        Label:
+            text: str(root.current_errors)
+            font_size: 80
+            color: [1,0,0,1]
+        Label:
+            text: str(root.total_errors)
+            font_size: 80
+            color: [1,1,0,1]
+
+
